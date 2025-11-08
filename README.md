@@ -25,16 +25,10 @@ sudo apt install git stow
 
 Step 2: Clone This Repository
 
-Since this repository is public, no SSH setup is needed. Clone it directly using HTTPS:
 ```bash
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/Skap3r/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
-
-> Replace YOUR_USERNAME with your GitHub username.
-
-
-
 
 ---
 
