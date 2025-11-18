@@ -1,0 +1,21 @@
+#
+# ghostty config by skaper
+#
+
+# Theme (Abernathy, etc.)
+theme = Liquid Carbon Transparent
+
+# Font
+font-family = Inconsolata Regular
+font-size = 16
+
+# Window
+window-padding-x = 15
+window-padding-y = 15
+window-decoration = none
+maximize = true
+background-opacity = 0.5
+#background-blur = true
+
+# Keybinding
+keybind = ctrl+shift+x=close_surface
