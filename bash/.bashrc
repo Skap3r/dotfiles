@@ -38,3 +38,6 @@ ssh-add -l >/dev/null || ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
 # Start ssh-agent automatically
 eval "$(ssh-agent -s)" >/dev/null
 ssh-add -l >/dev/null || ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
+
+# Set your default text editor
+export EDITOR=/usr/bin/nvim
