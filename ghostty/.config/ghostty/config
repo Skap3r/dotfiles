@@ -2,11 +2,11 @@
 # ghostty config by skaper
 #
 
-# Theme (Abernathy, Liquid Carbon Transparent, etc.)
-theme = Adventure
+# Theme (Abernathy, Liquid Carbon Transparent, Adventure, etc.)
+theme = Hardcore
 
 # Font
-font-family = Inconsolata Regular
+font-family = Inconsolata
 font-size = 16
 
 # Window
