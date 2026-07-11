@@ -8,6 +8,7 @@ theme = Hardcore
 # Font
 font-family = Inconsolata
 font-size = 16
+foreground = 149414
 
 # Window
 window-padding-x = 15
