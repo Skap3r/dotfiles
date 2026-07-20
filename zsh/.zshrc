@@ -108,7 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # Custom aliases
 alias ls='eza'
 alias ll='eza -lAh --group-directories-first --time-style=long-iso --icons'
-alias ff='fastfetch | lolcat'
 alias snow='shutdown now'
 alias city='curl ipinfo.io/city'
 alias nv='nvim'
@@ -117,6 +116,14 @@ alias protonu='nmcli connection up singapore-1'
 alias protond='nmcli connection down singapore-1'
 alias jellyu='sudo systemctl start jellyfin.service'
 alias jellyd='sudo systemctl stop jellyfin.service'
+
+ff() {
+	if command -v lolcat >/dev/null; then
+		fastfetch | lolcat
+	else
+		fastfetch
+	fi
+}
 
 # Set Vi keys
 bindkey -v
