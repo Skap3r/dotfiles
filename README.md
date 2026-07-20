@@ -82,7 +82,7 @@ stow -nv */
 ### Install Dependencies
 
 ```bash
-sudo pacman -S \
+sudo pacman -S --needed \
     zsh \
     stow \
     git \
