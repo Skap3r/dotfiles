@@ -23,7 +23,7 @@ sudo apt install git stow
 
 ---
 
-Step 2: Clone This Repository
+### Step 2: Clone This Repository
 
 ```bash
 git clone https://github.com/Skap3r/dotfiles.git ~/dotfiles
@@ -32,7 +32,7 @@ cd ~/dotfiles
 
 ---
 
-Step 3: Apply All Configurations
+### Step 3: Apply All Configurations
 
 To restore all dotfiles at once:
 ```bash
@@ -50,7 +50,7 @@ This will create symlinks from each configuration directory (e.g., ~/dotfiles/nv
 
 ---
 
-Step 4: Unstow or Remove Configs (Optional)
+### Step 4: Unstow or Remove Configs (Optional)
 
 If you ever need to remove links created by Stow:
 ```bash
@@ -74,6 +74,49 @@ To check what Stow will do before running it, use the dry-run flag:
 ```bash
 stow -nv */
 ```
+
+---
+
+## Zsh
+
+### Install Dependencies
+
+```bash
+sudo pacman -S \
+    zsh \
+    stow \
+    git \
+    eza \
+    fastfetch \
+    lolcat \
+    curl \
+    neovim \
+    unimatrix \
+    networkmanager \
+    jellyfin
+```
+
+### Install Oh My Zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+The configuration uses:
+
+- Theme: `bira`
+- Plugins:
+  - `git`
+
+Both are included with Oh My Zsh, so no additional plugins or themes are required.
+
+### Apply the configuration
+
+```bash
+cd ~/dotfiles
+stow zsh
+```
+
 
 
 
