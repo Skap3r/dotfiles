@@ -117,6 +117,25 @@ alias protond='nmcli connection down singapore-1'
 alias jellyu='sudo systemctl start jellyfin.service'
 alias jellyd='sudo systemctl stop jellyfin.service'
 
+pmu() {
+	sudo -v || return
+
+	echo "Updating pacman mirrorlist..."
+
+	sudo reflector \
+		--country India,Singapore,Japan \
+		--protocol https \
+		--age 6 \
+		--completion-percent 100 \
+		--sort rate \
+		--latest 20 \
+		--save /etc/pacman.d/mirrorlist
+
+	echo "Updating system..."
+
+	sudo pacman -Syyu
+}
+
 ff() {
 	if command -v lolcat >/dev/null; then
 		fastfetch | lolcat
@@ -130,3 +149,4 @@ bindkey -v
 
 # On terminal startup
 #ff
+export PATH="$PATH:$HOME/develop/flutter/bin"
