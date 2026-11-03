@@ -151,3 +151,8 @@ bindkey -v
 # On terminal startup
 #ff
 export PATH="$PATH:$HOME/develop/flutter/bin"
+export PATH="/home/skaper/.local/bin:$PATH"
+
+# Environment variables
+export SUDO_EDITOR=nvim
+export VISUAL=nvim
