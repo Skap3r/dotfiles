@@ -154,6 +154,6 @@ export PATH="$PATH:$HOME/develop/flutter/bin"
 export PATH="/home/skaper/.local/bin:$PATH"
 
 # Environment variables
-export SUDO_EDITOR=nvim
-export VISUAL=nvim
-export EDITOR=nvim
+export SUDO_EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
