@@ -156,3 +156,4 @@ export PATH="/home/skaper/.local/bin:$PATH"
 # Environment variables
 export SUDO_EDITOR=nvim
 export VISUAL=nvim
+export EDITOR=nvim
