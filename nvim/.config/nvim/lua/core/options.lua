@@ -32,7 +32,7 @@ opt.splitbelow = true      -- Open horizontal splits below
 opt.clipboard = "unnamedplus" -- Use the system clipboard
 
 -- Editing
-opt.undofile = true        -- Persist undo history between sessions
+opt.undofile = false       -- Persist undo history between sessions
 opt.updatetime = 250       -- Faster CursorHold and other update events
 opt.timeoutlen = 400       -- Wait 400ms for a mapped key sequence
 
