@@ -7,6 +7,6 @@ autocmd("TextYankPost", {
         clear = true,
     }),
     callback = function()
-        vim.hl.hl_op()
+        vim.hl.on_yank()
     end,
 })
