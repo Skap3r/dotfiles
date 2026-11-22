@@ -8,6 +8,7 @@ opt.relativenumber = true  -- Show relative line numbers
 opt.expandtab = true       -- Convert tabs to spaces
 opt.tabstop = 4            -- Visual width of a tab character
 opt.shiftwidth = 4         -- Number of spaces for indentation
+opt.softtabstop = 4        -- Tab and Backspace move by 4 columns
 opt.smartindent = true     -- Automatically adjust indentation on new lines
 
 -- Search
